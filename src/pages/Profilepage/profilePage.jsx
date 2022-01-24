@@ -92,12 +92,15 @@ const ProfilePage = () => {
         if(!storedUser || storedUser === 'null' || storedUser === undefined || storedUser === 'undefined') window.location.href = "/login";
         else {
             storedUser = JSON.parse(storedUser);
+            setLoaderText('Fetching user details');
+            setShowLoader(true);
             axios({
                 method: 'GET',
                 url: `https://prastuti-backend.herokuapp.com/api/user/${storedUser._id}`
             })
             .then(res => {
-                console.log(res.data);
+                setShowLoader(false);
+                console.log(res.data[0]);
             })
             setUser(storedUser);
         }
