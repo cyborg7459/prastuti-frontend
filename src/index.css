@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background: rgba(0,0,0,0.025);
+}
+
+.shadow-heading {
+  text-shadow: 3px 1px 5px black;
+}
+
+.shadow-heading-2 {
+  text-shadow: 2px 1px 2px rgba(0,0,0,0.14);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.user-img {
+  background-image:url('./gallery/userlogo.png')!important;
+}
+
+.menu-icon {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  font-size: 32px;
+  cursor: pointer;
+  display: none;
+}
+
+@media(max-width: 700px) {
+  .menu-icon {
+    top: 15px;
+    font-size: 25px;
+    right: 20px;
+  }
+
+}
+
+@media(max-width: 1100px) {
+  .menu-icon {
+    display: block;
+  }
+}

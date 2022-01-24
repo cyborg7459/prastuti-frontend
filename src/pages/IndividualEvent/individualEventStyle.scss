@@ -1,0 +1,125 @@
+#individual-event-page {
+    .page {
+        margin-left: 350px;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media(max-width: 1100px) {
+            margin-left: 0;
+        }
+
+        @media(max-width: 700px) {
+            padding: 60px 0px;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        #bg-card {
+            height: 300px;
+            border-radius: 15px;
+            width: 95%;
+            margin-bottom: -60px;
+            background-size: cover!important;
+
+            @media(max-width: 700px) {
+                height: 200px;
+            }
+    
+            .overlay {
+                height: 100%;
+                width: 100%;
+                background: black;
+                border-radius: 15px;
+                opacity: 0.50;
+            }
+        }
+    
+        #front-card {
+            height: auto;
+            min-height: 600px;
+            display: flex;
+            background: white;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+            padding: 40px 0px;
+            width: 92%;
+            z-index: 1000;
+            box-shadow: 2px 5px 10px rgba(0,0,0,0.15);
+
+            h1 {
+                @media(max-width: 700px) {
+                    font-size: 32px!important;
+                }
+            }
+
+            .size12 {
+                @media(max-width: 700px) {
+                    font-size: 18px!important;
+                    margin-bottom: 0px;
+                }
+            }
+
+            
+
+            @media(max-width: 700px) {
+                padding: 20px 5px;
+                text-align: justify;
+                width: 90%;
+            }
+
+            .msg {
+                text-align: center;
+                font-weight: 500;
+            }
+
+            .button {
+                font-weight: 300;
+                margin-top: 40px;
+                border: 1px solid black;
+                padding: 8px 15px;
+                border-radius: 4px;
+                transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+                cursor: pointer;
+
+
+                &:hover {
+                    color: white;
+                    background: black;
+                }
+            }
+    
+            .subheading {
+                font-weight: 400;
+            }
+    
+            p {
+                width: 95%;
+                max-width: 1200px;
+                margin-top: 40px;
+                font-weight: 200;
+
+                @media(max-width: 700px) {
+                    margin-top: 25px;
+                    font-size: 12px!important;
+                    font-weight: 300;
+                }
+
+
+                a {
+                    font-weight: 300;
+                    color: rgb(7, 7, 165);
+                }
+            }
+        }
+    }
+
+    
+}

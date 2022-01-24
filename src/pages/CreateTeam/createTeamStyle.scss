@@ -1,0 +1,61 @@
+#create-team {
+    height: 100vh;
+    background: url('../../gallery/teambg.jpg');
+
+    .overlay {
+        height: 100%;
+        background: rgba(0,0,0,0.85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .card {
+            width: 96%;
+            max-width: 500px;
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            position: absolute;
+            text-align: center;
+            z-index: 1000;
+            box-sizing: border-box;
+            
+            .card-heading {
+                color: white;
+                background: rgb(8, 8, 70);
+                padding: 10px 25px;
+                box-sizing: border-box;
+                border-radius: 10px;
+                margin-top: -90px;
+                width: 100%;
+
+                @media(max-width: 700px) {
+                    font-size: 12px;
+                }
+            }
+
+            input {
+                margin-top: 30px;
+                width: 90%;
+                padding: 15px;
+                border-radius: 3px;
+                border: 1px solid rgba(0,0,0,0.25);
+            }
+
+            .btn {
+                margin-top: 20px;
+                border: 1px solid rgba(8, 8, 70, 0.40);
+                width: 100%;
+                padding: 8px 0px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+                &:hover {
+                    color: white;
+                    background: rgb(8, 8, 70);
+                }
+            }
+        }
+    }
+}

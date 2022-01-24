@@ -1,0 +1,99 @@
+#event-card {
+    padding: 10px;
+    margin: 15px 0px;
+    width: 95%;
+    max-width: 1400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.14);
+    display: flex;
+
+    @media(max-width: 1400px) {
+        width: 98%;
+    }
+
+    @media(max-width: 700px) {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    img {
+        width: 500px;
+        border-radius: 10px;
+        margin: 0;
+        padding: 0;
+
+        @media(max-width: 1400px) {
+            width: 380px!important;
+        }
+
+        @media(max-width: 700px) {
+            width: 100%!important;
+        }
+    }
+
+    .content {
+        padding: 10px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media(max-width: 1400px) {
+            padding: 10px 15px;
+        }
+
+        h1 {
+            text-shadow: 2px 1px 2px rgba(0,0,0,0.14);
+            margin-bottom: 0!important;
+            cursor: pointer;
+        }
+
+        h2 {
+            font-weight: 300;
+        }
+
+        p {
+            font-weight: 200;
+            padding: 25px 0;
+
+            @media(max-width: 1400px) {
+                font-size: 14px;
+                font-weight: 300;
+
+                padding: 10px 0px;
+            }
+        }
+
+        hr {
+            height: 1px;
+            border: none;
+            background-color: rgba(0,0,0,0.12);
+        }
+
+        .footer {
+            padding: 14px 0px;
+            color: rgba(0,0,0,0.50);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media(max-width: 700px) {
+                font-size: 14px;
+            }
+
+            div {
+                background: none;
+                color: black;
+                border: 1px solid black;
+                padding: 4px 15px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+                &:hover {
+                    color: white;
+                    background: black;
+                }
+            }
+        }
+    }
+}
