@@ -91,6 +91,7 @@ const ProfilePage = () => {
         let storedUser = localStorage.getItem('prastuti-user');
         if(!storedUser || storedUser === 'null' || storedUser === undefined || storedUser === 'undefined') window.location.href = "/login";
         else {
+            storedUser = JSON.parse(storedUser);
             axios({
                 method: 'GET',
                 url: `https://prastuti-backend.herokuapp.com/api/user/${storedUser._id}`
@@ -98,7 +99,6 @@ const ProfilePage = () => {
             .then(res => {
                 console.log(res.data);
             })
-            storedUser = JSON.parse(storedUser);
             setUser(storedUser);
         }
         
