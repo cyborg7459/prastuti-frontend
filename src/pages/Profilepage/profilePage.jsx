@@ -100,6 +100,7 @@ const ProfilePage = () => {
             })
             .then(res => {
                 setShowLoader(false);
+                localStorage.setItem('prastuti-user', JSON.stringify(res.data[0]));
                 setUser(res.data[0]);
             })
             .catch(err => {
