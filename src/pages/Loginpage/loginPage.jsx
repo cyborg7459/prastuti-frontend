@@ -126,7 +126,7 @@ const Loginpage = () => {
             <div id="right">
                 <img src={loginImg} alt="login" />
                 <GoogleLogin
-                    clientId="937290168286-onq4222sbjehp0g8srh2ir92k0eg3e6r.apps.googleusercontent.com"
+                    clientId="937290168286-llvgiikgv77013fa42p34aougini7vjh.apps.googleusercontent.com"
                     buttonText="Login with Google"
                     onSuccess={responseGoogleSuccess}
                     onFailure={responseGoogleError}
