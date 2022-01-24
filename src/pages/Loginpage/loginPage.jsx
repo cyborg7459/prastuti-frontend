@@ -24,7 +24,7 @@ const CollegeForm = ({ user, setUserInLocalStorage, showLoaderWithMessage, hideL
                 }
             }).then((res) => {
                 hideLoader();
-                setUserInLocalStorage(res.data);
+                // setUserInLocalStorage(res.data);
             }).catch(err => {
                 hideLoader();
                 console.log(err);
@@ -92,7 +92,8 @@ const Loginpage = () => {
                 setForm(true);
             }
             else {
-                setUserInLocalStorage(user.user);
+                console.log(user);
+                // setUserInLocalStorage(user.user);
             }
         }).catch((err) => {
             setShowLoader(false);
