@@ -100,9 +100,12 @@ const ProfilePage = () => {
             })
             .then(res => {
                 setShowLoader(false);
-                console.log(res.data[0]);
+                setUser(res.data[0]);
             })
-            setUser(storedUser);
+            .catch(err => {
+                setUser(storedUser);
+                console.log(err);
+            })
         }
         
     }, [])

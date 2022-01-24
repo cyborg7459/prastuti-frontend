@@ -47,7 +47,7 @@ const TeamRegister = () => {
     useEffect(() => {
         let url = window.location.href.split('/');
         const eventName = url[url.length - 1];
-        if(eventName !== 'HackOverflow' && eventName !== 'Simulim') {
+        if(eventName !== 'HackOverflow' && eventName !== 'Consilium') {
             window.location.href = '/events'
         }
         else {
