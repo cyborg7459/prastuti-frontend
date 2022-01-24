@@ -89,8 +89,15 @@ const ProfilePage = () => {
         profileBtn[0].classList.add('active');
 
         let storedUser = localStorage.getItem('prastuti-user');
-        if(!storedUser || storedUser === 'null') window.location.href = "/login";
+        if(!storedUser || storedUser === 'null' || storedUser === undefined || storedUser === 'undefined') window.location.href = "/login";
         else {
+            axios({
+                method: 'GET',
+                url: `https://prastuti-backend.herokuapp.com/api/user/${storedUser._id}`
+            })
+            .then(res => {
+                console.log(res.data);
+            })
             storedUser = JSON.parse(storedUser);
             setUser(storedUser);
         }
