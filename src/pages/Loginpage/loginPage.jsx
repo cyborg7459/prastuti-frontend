@@ -86,6 +86,7 @@ const Loginpage = () => {
         }).then((res) => {
             setShowLoader(false);
             let user = res.data;
+            console.log(user);
             if(user.isNew) {
                 setUser(user.user);
                 setForm(true);
