@@ -120,7 +120,9 @@ const Loginpage = () => {
                 <div className="overlay">
                     <h1 className='size34 shadow-heading'>Welcome to Prastuti</h1>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero fugiat ea ipsam ut odit pariatur nostrum sint exercitationem deleniti repellat numquam eos nam perspiciatis ratione facilis nobis vel, illum porro dolores reiciendis aliquam! Facere tempora, nemo deleniti esse laboriosam necessitatibus neque ea in consectetur, eius odit fuga ipsa cum quas.
+                    Prastuti is the Annual Technical Festival of the Department of Electrical Engineering, IIT (BHU), Varanasi. It takes pride in being the longest-running departmental fest in the institute. Started in 2001, Prastuti has grown over the years in stature and has made its impact nationwide.
+                    <br /><br />
+The objective of Prastuti is the growth of research impulses and inculcation of analytical and innovative streak amongst students of technical institutions. We enlarged our perspective and launched numerous new events, embracing multifarious walks of the technical and professional world.
                     </p>
                 </div>
             </div>
