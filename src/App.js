@@ -9,6 +9,7 @@ import IndividualEvent from "./pages/IndividualEvent/individualEvent";
 import Teampage from "./pages/Teampage/teampage";
 import CreateTeam from "./pages/CreateTeam/createTeam";
 import TeamRegister from "./pages/TeamRegister/teamRegister";
+import ErrorPage from "./pages/ErrorPage/errorPage";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/team/:teamSlug' element={<Teampage />} exact/>
         <Route path='/create-team' element={<CreateTeam />} exact/>
         <Route path='/team-register/:eventName' element={<TeamRegister />} exact />
+        <Route path='*' element={<ErrorPage />}/>
       </Routes>
     </div>
   );
