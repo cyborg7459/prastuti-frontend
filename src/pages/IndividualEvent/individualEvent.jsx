@@ -108,7 +108,10 @@ const IndividualEvent = () => {
                                 <h1 className='size12 subheading'>{event.Domain}</h1>
                                 <p>{event.Description[0]}</p>
                                 <p>{event.Description[1]}</p>
-                                <p>{event.Description[2]}</p>
+                                <p>
+                                    <h5>Event Structure</h5>
+                                    {event.Description[2]}
+                                </p>
                                 {
                                     isRegistered ? 
                                     (<p className='msg'>
