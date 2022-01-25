@@ -129,7 +129,7 @@ The objective of Prastuti is the growth of research impulses and inculcation of 
             <div id="right">
                 <img src={loginImg} alt="login" />
                 <GoogleLogin
-                    clientId="937290168286-vq2rnieavdl8a001vpb9s1ed95j08hdu.apps.googleusercontent.com"
+                    clientId="937290168286-gsklm7k0r1mb93963t26lgso2fbt5dn3.apps.googleusercontent.com"
                     buttonText="Login with Google"
                     onSuccess={responseGoogleSuccess}
                     onFailure={responseGoogleError}
