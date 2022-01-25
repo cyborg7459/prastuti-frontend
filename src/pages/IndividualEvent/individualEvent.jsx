@@ -109,7 +109,7 @@ const IndividualEvent = () => {
                                 <p>{event.Description[0]}</p>
                                 <p>{event.Description[1]}</p>
                                 <p>
-                                    <h5>Event Structure</h5>
+                                    <h3>Event Structure</h3>
                                     {event.Description[2]}
                                 </p>
                                 {
