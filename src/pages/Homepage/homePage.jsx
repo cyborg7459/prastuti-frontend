@@ -42,11 +42,13 @@ const Homepage = () => {
                 <div className="overlay shadow-heading">
                     <Fade duration={1000}>
                         <h1 className='size40'>About Us</h1>
-                        <p className='size13'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, facilis minima sunt consectetur cumque officiis hic labore? Reiciendis excepturi veritatis id architecto vel voluptate, inventore nobis amet cupiditate. Iure aliquam numquam ullam quaerat nostrum, voluptates minima atque consequuntur nesciunt! Deleniti minus assumenda id consequatur quo aliquam aliquid libero quae deserunt!
+                        <p>
+                            Prastuti was started as an All India Students’ Paper Presentation contest organized by the Electrical Engineering Society (EES) in 2001. It was Prof. S.N. Mahendra’s pioneering design that materialized the idea of Prastuti as an event.
                             <br /><br />
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dignissimos ab reprehenderit ipsa consequuntur, dicta quo iusto sit ratione nemo voluptatibus hic facere est dolorem molestias tempora voluptatem amet aspernatur consectetur? Iure eligendi ducimus dolore dolorem, laborum minus inventore magnam. Vero commodi obcaecati quasi voluptas harum expedita velit aliquid sequi.
-                        
+                            Since then, Prastuti has grown in eminence and, through its nationwide notability, has impacted many curious minds. The primary intention behind organizing Prastuti is to stimulate research instincts and instill an analytical spirit amongst the scholars of various technical institutes.
+                            <br /><br />
+                            Over the years, as technology has developed, we also expanded our horizons. We give all the young minds a first-hand experience of the fast-paced technological world by conducting new advanced events.
+The Electrical Engineering department of IIT (BHU), Varanasi, following its glorious legacy, proudly presents the 20th iteration of its annual fiesta from April 15th to April 17th, 2022. This year, Prastuti emerges to be better than ever by putting forward a series of innovative competitions in Power Electronics, Digital Electronics, Cryptography, DSA, Software Development, Artificial Intelligence and Machine Learning, thereby taking you through the technological renaissance
                         </p>
                     </Fade>
                 </div>
