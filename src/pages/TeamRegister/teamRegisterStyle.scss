@@ -2,6 +2,13 @@
     height: 100vh;
     background: url('../../gallery/teambg.jpg');
 
+    .error-msg {
+        color: red;
+        font-weight: 200;
+        text-align: justify;
+        font-size: 14px;
+    }
+
     .overlay {
         height: 100%;
         background: rgba(0,0,0,0.85);
