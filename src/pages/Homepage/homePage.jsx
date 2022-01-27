@@ -58,7 +58,7 @@ The Electrical Engineering department of IIT (BHU), Varanasi, following its glor
                 <p>
                     For more details, contact undersigned
                     <br />
-                    Ayush Thakur : +91 99940 73229
+                    Ayush Thakur : +91 93340 73229
                     <br />
                     Mohit : +91 70610 38336
                 </p>
