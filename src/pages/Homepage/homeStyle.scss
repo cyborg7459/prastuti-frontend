@@ -80,7 +80,7 @@
         .overlay {
             color: white;
             background: rgba(0,0,0,0.85);
-            height: 100%;
+            height: inherit;
             display: flex;
             flex-direction: column;
             justify-content: center;
