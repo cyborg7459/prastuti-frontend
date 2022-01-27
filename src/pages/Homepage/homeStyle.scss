@@ -74,13 +74,15 @@
 
     #about {
         margin-top: 100vh;
+        height: auto;
         min-height: 100vh;
         background: url('../../gallery/aboutbg.jpg');
 
         .overlay {
             color: white;
             background: rgba(0,0,0,0.85);
-            height: inherit;
+            height: auto;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
