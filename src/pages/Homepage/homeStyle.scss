@@ -74,7 +74,7 @@
 
     #about {
         margin-top: 100vh;
-        height: 100vh;
+        min-height: 100vh;
         background: url('../../gallery/aboutbg.jpg');
 
         .overlay {
