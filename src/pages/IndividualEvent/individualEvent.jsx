@@ -51,6 +51,10 @@ const IndividualEvent = () => {
         }
     }
 
+    const HandleUnregister = () => {
+        console.log('Unregistering for event');
+    }
+
     useEffect(() => {
         let storedUser = localStorage.getItem('prastuti-user');
         if(!storedUser || storedUser === 'null') {
@@ -114,11 +118,16 @@ const IndividualEvent = () => {
                                 </p>
                                 {
                                     isRegistered ? 
-                                    (<p className='msg'>
-                                        You have already registered for this event
-                                        <br />
-                                        JOIN GROUP : <a href={event.WALink}>{event.WALink}</a> 
-                                    </p>)
+                                    (
+                                        <div>
+                                            <p className='msg'>
+                                                You have already registered for this event
+                                                <br />
+                                                JOIN GROUP : <a href={event.WALink}>{event.WALink}</a> 
+                                            </p>
+                                            <div onClick={HandleUnregister} className='button' id='unregister-btn'>Unregister</div>
+                                        </div>
+                                    )
                                     :
                                     ( <div onClick={HandleRegister} className="button">Register for {event.Name}</div> )
                                 }
