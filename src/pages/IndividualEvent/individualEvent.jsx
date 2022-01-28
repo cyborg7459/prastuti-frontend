@@ -134,7 +134,7 @@ const IndividualEvent = () => {
                                 {
                                     isRegistered ? 
                                     (
-                                        <div>
+                                        <div id='xa12'>
                                             <p className='msg'>
                                                 You have already registered for this event
                                                 <br />
