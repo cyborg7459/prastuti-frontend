@@ -88,9 +88,9 @@ const TeamRegister = () => {
                                             }
                                         </select>
                                         <div onClick={RegisterForEvent} className="btn">Register</div>
-                                        <p className="error-msg">
+                                        {/* <p className="error-msg">
                                             <strong>DISCLAIMER : </strong> Make sure this team is final. Once you've registered, you cannot add any more members in the team
-                                        </p>
+                                        </p> */}
                                         <h2 style={{marginTop: "25px"}}>OR</h2>
                                     </div>
                                 )
