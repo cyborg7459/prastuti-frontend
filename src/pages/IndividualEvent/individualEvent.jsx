@@ -52,7 +52,22 @@ const IndividualEvent = () => {
     }
 
     const HandleUnregister = () => {
+        setLoaderText('Unregistering Team');
+        setShowLoader(true);
         console.log('Unregistering for event');
+        axios({
+            method: 'POST',
+            url: 'https://prastuti-backend.herokuapp.com/api/unregister',
+            data: {
+                eventID: event._id,
+                userID: user._id
+            }
+        }).then(res => {
+            setShowLoader(false);
+            window.location.href = '/events'
+        }).catch(err => {
+            setShowLoader(false);
+        })
     }
 
     useEffect(() => {
@@ -125,7 +140,13 @@ const IndividualEvent = () => {
                                                 <br />
                                                 JOIN GROUP : <a href={event.WALink}>{event.WALink}</a> 
                                             </p>
-                                            <div onClick={HandleUnregister} className='button' id='unregister-btn'>Unregister</div>
+                                            {
+                                                event.Team_Event ? 
+                                                (
+                                                    <div onClick={HandleUnregister} className='button' id='unregister-btn'>Unregister</div>
+                                                )
+                                                : null
+                                            }
                                         </div>
                                     )
                                     :
